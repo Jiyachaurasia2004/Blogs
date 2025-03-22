@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+.container{
+    
+    max-width: 95vw;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    /* background-color: antiquewhite; */
+
+}
+
+a{
+    text-decoration: none;
+}
+
+.main{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(4,1fr);
+}
+.header{
+   
+    margin-bottom: 2.8rem;
+}
+.header h1{
+   text-align: center;
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.header p{
+    max-width: 568px;
+    color: rgb(82, 80, 80);
+    margin: 0 auto;
+    text-align: center;
+}
+.card-container{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(75, 73, 73);
+    border-radius: 5px;
+    
+}
+.card-img-container{
+   position: relative;
+   overflow: hidden;
+    
+}
+.img-1{
+  object-position: center;
+    height: 200px;
+    width: 100%;
+}
+.card-title{
+    display: flex;
+    flex-direction: column;
+    margin: 6px;
+    /* padding: 1rem; */
+    line-height: 1.5rem;
+    margin-bottom: 0.3rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    
+}
+.card-title a{
+    list-style: none;
+    color: rgb(49, 46, 46);
+}
+.card-img-container:hover .img-1{
+    transform: scale(1.1);
+    transition-duration: 200px;
+}
+.card-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+}
+.card-tag{
+    width: 25%;
+     height: 40%;
+    margin-right: 15px;
+    border: 1px solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 0.7rem;
+   
+  
+}
+.card-tag:hover{
+    background-color: rgb(101, 101, 204);
+    color: aliceblue;
+}
+.author-info{
+    display: flex;
+  flex-direction: column;
+   position: relative;
+   right: 50%;
+  margin-top: 4.5%;
+    font-size: 0.7rem;
+}
+
+.card-title:hover h2{
+    color: blue;
+}
+.author{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+/* @media (min-width:650px) {
+    .main{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (min-width:1080px) {
+    .main{
+        grid-template-columns: repeat(3,1fr);
+    }
+} */
